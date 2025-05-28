@@ -30,3 +30,28 @@ th {
   font-weight: 600;
   color: #333;
 }
+.pagination {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #aaa;
+  cursor: default;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
