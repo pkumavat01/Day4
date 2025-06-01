@@ -1,0 +1,11 @@
+indices:
+  default:
+    include:
+      - /sites/day 4/**
+    spreadsheet: /sites/day 4/query-index
+    sheet: helix-default
+    properties:
+      - path
+      - title
+      - description
+      - image
