@@ -1,7 +1,7 @@
 indices:
   Day4:
     include:
-      - '**'
+      - '/**'
     exclude: []
     target: /query-index.json
     properties:
