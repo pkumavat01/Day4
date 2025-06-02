@@ -1,8 +1,8 @@
 indices:
   default:
     include:
-      - /sites/day4/**
-    spreadsheet: /sites/day4/query-index
+      - /day4/**
+    spreadsheet: /day4/query-index
     sheet: helix-default
     properties:
       - path
