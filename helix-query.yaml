@@ -2,7 +2,8 @@ indices:
   Day4:
     include:
       - '**'
-    exclude: []
+    exclude:
+      - '/privatefile'
     target: /query-index.json
     properties:
       title:
