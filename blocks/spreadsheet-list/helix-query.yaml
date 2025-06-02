@@ -1,11 +1,17 @@
 indices:
-  default:
+  day4-site:
     include:
-      - /day4/**
-    spreadsheet: /day4/query-index
-    sheet: helix-default
+      - /sites/day4/**
+    target: /query-index.json
     properties:
-      - path
-      - title
-      - description
-      - image
+      path:
+        value: path
+      title:
+        selectFirst: main > h1
+        value: textContent(el)
+      description:
+        selectFirst: main > p
+        value: textContent(el)
+      image:
+        selectFirst: main img
+        value: attribute(el, "src")
