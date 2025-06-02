@@ -4,13 +4,11 @@ indices:
       - '**'
     target: /query-index.json
     properties:
-      path:
-        value: path
       title:
         select: head > meta[name='title'],head>meta[property="og:title"]
         value: | attribute(el,'content')
       description:
-        select: head > meta[name='description']
+        select: head > meta[name='description'], head > meta[property="og:description"]
         value: | attribute(el,'content')
       image:
         select: head > meta[name='image'],head>meta[property="og:image"]
