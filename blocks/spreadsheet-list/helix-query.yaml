@@ -1,5 +1,5 @@
 indices:
-  day4-site:
+  day4:
     include:
       - '**'
     target: /query-index.json
