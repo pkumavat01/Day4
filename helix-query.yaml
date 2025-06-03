@@ -16,7 +16,3 @@ indices:
       image:
         select: head > meta[name="image"], head > meta[property="og:image"]
         value: attribute(el, "content")
-
-      robots:
-        select: head > meta[name="robots"]
-        value: attribute(el, "content")
