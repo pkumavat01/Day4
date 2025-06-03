@@ -55,3 +55,7 @@ th {
 .pagination button:hover:not(:disabled) {
   background-color: #0056b3;
 }
+
+.hidden-link{
+  display: none;
+}

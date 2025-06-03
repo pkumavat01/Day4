@@ -1,7 +1,14 @@
 export default async function decorate(block) {
-  const resp = await fetch('/spreadsheet.json');
-  const json = await resp.json();
+  const anchor = block.querySelector('a');
 
+  if (!anchor) {
+    console.error('No <a> tag with JSON link found inside the block.');
+    return;
+  }
+  anchor.classList.add('hidden-link');
+  const jsonUrl = anchor.href;
+  const resp = await fetch(jsonUrl);
+  const json = await resp.json();
   const columns = json.columns;
   const rows = json.data;
 
