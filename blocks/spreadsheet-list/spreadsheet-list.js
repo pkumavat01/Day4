@@ -1,11 +1,8 @@
 export default async function decorate(block) {
   const anchor = block.querySelector('a');
-
-  if (!anchor) {
-    console.error('No <a> tag with JSON link found inside the block.');
-    return;
-  }
-  anchor.classList.add('hidden-link');
+  const p = block.querySelector('p');
+  console.log(p)
+  p.classList.add('hidden-link');
   const jsonUrl = anchor.href;
   const resp = await fetch(jsonUrl);
   const json = await resp.json();
